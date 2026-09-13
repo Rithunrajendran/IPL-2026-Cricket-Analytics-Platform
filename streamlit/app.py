@@ -1,14 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import joblib
 import plotly.express as px
 import plotly.graph_objects as go
 from pathlib import Path
-from sklearn import __version__
-try:
-    import joblib
-except ModuleNotFoundError:
-    from sklearn.utils import _joblib as joblib
 
 # ─────────────────────────────────────────────
 # PAGE CONFIG
